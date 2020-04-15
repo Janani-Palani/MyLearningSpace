@@ -74,7 +74,7 @@ public class MyntraTest {
 
 //Close the pop-up box after search
 		driver.findElementByXPath("//span[contains(@class,'FilterDirectory-close')]").click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 //To confirm all coats are from brand MANGO
 		List<WebElement> brandlist = driver.findElementsByXPath("//h3[@class='product-brand']");
@@ -96,6 +96,7 @@ public class MyntraTest {
 		WebElement ele2 = driver.findElementByXPath("//div[@class='sort-sortBy']");
 		builder.moveToElement(ele2).perform();
 		driver.findElementByXPath("//ul[@class='sort-list']/li[3]/label").click();
+		Thread.sleep(500);
 		
 //Find the price of first displayed item
 		List<WebElement> allitemsprice = driver.findElementsByXPath("//span[@class='product-discountedPrice']");
