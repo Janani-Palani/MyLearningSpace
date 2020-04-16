@@ -1,1 +1,1 @@
-Adding an item to wishlist in Myntra Web app
+Here, you can find my journey in Selenium Automation
