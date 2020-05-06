@@ -201,7 +201,7 @@ public class Day15Airbnb {
 	int j=0;
 	try
 	{
-		while(j<5)
+		while(j==0)
 		{
 		if(eleNext.isDisplayed())
 		{
