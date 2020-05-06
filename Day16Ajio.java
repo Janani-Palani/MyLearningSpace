@@ -111,7 +111,7 @@ public class Day16Ajio {
 	Thread.sleep(1000);
 	driver.findElementByXPath("//span[contains(text(),'Enter pin-code')]").click();
 	wait.until(ExpectedConditions.elementToBeClickable(driver.findElementByXPath("//input[@name='pincode']")));
-	driver.findElementByXPath("//input[@name='pincode']").sendKeys("560043");
+	driver.findElementByXPath("//input[@name='pincode']").sendKeys("682001");
 	Thread.sleep(500);
 	driver.findElementByXPath("//button[text()='CONFIRM PINCODE']").click();
 	Thread.sleep(2000);
