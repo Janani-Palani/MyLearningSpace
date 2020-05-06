@@ -175,14 +175,7 @@ public class Day16Ajio {
 		System.out.println("Item deleted from bag");
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+//Close browser
+	driver.close();
 }
 }
