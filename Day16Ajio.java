@@ -154,10 +154,9 @@ public class Day16Ajio {
 //12) Verify the Coupon Savings amount(round off if it in decimal) under Order Summary and the matches the amount calculated in Product details
 	Thread.sleep(1000);
 	String rawPriceAfterCoupon = driver.findElementByXPath("//span[@class='applied-coupon-section']/p").getText();
-	String rawPriceAfter = rawPriceAfterCoupon.replaceAll("[,a-zA-Z ]", "");
-	String[] split = rawPriceAfter.split(".", 2);
-	String strPriceAfterCoupon = split[1];
-	double dpriceAfterCoupon = Double.parseDouble(strPriceAfterCoupon);
+	String rawPriceAfter = rawPriceAfterCoupon.replaceAll("[:,a-zA-Z ]", "");
+	String substring = rawPriceAfter.substring(1);
+	double dpriceAfterCoupon = Double.parseDouble(substring);
 	int priceAfterCoupon=(int)Math.round(dpriceAfterCoupon);
 	if(priceAfterCoupon==couponAmount)
 	{
@@ -176,6 +175,6 @@ public class Day16Ajio {
 	}
 	
 //Close browser
-	driver.close();
+	driver.quit();
 }
 }
